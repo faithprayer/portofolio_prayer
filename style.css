@@ -1,0 +1,234 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-color: #001C30;
+    --primary-color: #176B87;
+    --secondary-color: #64CCC5;
+    --tertiary-color: #DAFFFB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',
+        sans-serif;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2000' height='1000' preserveAspectRatio='none' viewBox='0 0 2000 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1151%26quot%3b)' fill='none'%3e%3crect width='2000' height='1000' x='0' y='0' fill='rgba(0%2c 28%2c 48%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c675.39C139.036%2c660.41%2c290.756%2c711.068%2c409.205%2c636.736C527.94%2c562.224%2c559.308%2c409.393%2c622.92%2c284.478C689.685%2c153.373%2c808.585%2c32.333%2c791.406%2c-113.787C774.177%2c-260.334%2c642.95%2c-362.988%2c534.977%2c-463.56C436.445%2c-555.339%2c328.989%2c-645.856%2c196.2%2c-668.195C69.682%2c-689.479%2c-45.774%2c-610.287%2c-170.986%2c-582.325C-307.458%2c-551.848%2c-458.909%2c-577.403%2c-572.917%2c-496.436C-698.797%2c-407.038%2c-805.777%2c-271.791%2c-824.104%2c-118.488C-842.337%2c34.027%2c-727.838%2c163.627%2c-668.78%2c305.421C-607.284%2c453.067%2c-610.042%2c654.051%2c-470.089%2c731.473C-329.148%2c809.442%2c-160.143%2c692.644%2c0%2c675.39' fill='%23001626'%3e%3c/path%3e%3cpath d='M2000 1753.966C2149.534 1779.8890000000001 2317.511 1774.4070000000002 2440.861 1685.993 2562.9 1598.519 2588.837 1433.655 2642.518 1293.4279999999999 2692.781 1162.129 2767.536 1031.647 2744.443 892.965 2721.522 755.316 2608.6710000000003 657.2090000000001 2518.802 550.456 2427.593 442.111 2355.463 288.57500000000005 2215.811 265.015 2075.633 241.36599999999999 1965.608 380.991 1834.084 434.94000000000005 1719.786 481.823 1587.687 481.129 1493.641 561.238 1391.78 648.004 1296.926 764.335 1290.4769999999999 897.986 1284.12 1029.728 1397.12 1130.721 1460.585 1246.343 1518.747 1352.304 1559.501 1465.624 1647.526 1548.461 1748.616 1643.5929999999998 1863.226 1730.255 2000 1753.966' fill='%2300223a'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1151'%3e%3crect width='2000' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+
+.more {
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+.more:hover {
+    background-color: var(--tertiary-color) !important;
+    text-decoration: none;
+}
+.btn-more{
+    color: var(--tertiary-color);
+}
+.btn-more:hover{
+    color: var(--bg-color);
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-color);
+}
+
+.navbar .navbar-brand {
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-brand:hover {
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-brand span {
+    color: var(--tertiary-color);
+}
+
+.nav-item .nav-link {
+    position: relative;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: var(--tertiary-color) !important;
+}
+
+.nav-item .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+/* End Navbar */
+
+/* Icon */
+.linkedin-icon:hover {
+    color: #0077b5;
+}
+
+.github-icon:hover {
+    color: #DAFFFB;
+}
+
+.instagram-icon:hover {
+    color: #c13584;
+}
+
+/* End Icon */
+
+/* Home */
+
+.home-subtitle {
+    font-size: 16px;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+.home {
+    padding: 60px 0px;
+}
+
+/* End Home */
+
+.intro-content {
+    color: var(--tertiary-color);
+}
+
+.intro-content h1 {
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.intro-content h4 {
+    font-weight: 700;
+}
+
+.intro-content p {
+    font-weight: 500;
+}
+
+.intro-contact i {
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+
+.headline {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.project h2 {
+    color: var(--secondary-color);
+}
+
+.card {
+    background-color: var(--tertiary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.btn-project {
+    border-radius: 10px;
+    background-color: black;
+    color: var(--tertiary-color);
+    transition: all .2s ease-in-out;
+}
+.btn-project:hover{
+    transform: scale(1.2);
+}
+
+.skill {
+    background-color: var(--secondary-color);
+}
+
+.headline-skill {
+    color: var(--bg-color);
+    font-weight: 900;
+    text-align: center;
+}
+
+.card-skill {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.card-skill img {
+    height: 150px;
+    width: 150px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-skill i {
+    font-size: 150px;
+    color: yellow;
+}
+
+.experience {
+    background-color: var(--bg-color);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2000' height='1000' preserveAspectRatio='none' viewBox='0 0 2000 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1151%26quot%3b)' fill='none'%3e%3crect width='2000' height='1000' x='0' y='0' fill='rgba(0%2c 28%2c 48%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c675.39C139.036%2c660.41%2c290.756%2c711.068%2c409.205%2c636.736C527.94%2c562.224%2c559.308%2c409.393%2c622.92%2c284.478C689.685%2c153.373%2c808.585%2c32.333%2c791.406%2c-113.787C774.177%2c-260.334%2c642.95%2c-362.988%2c534.977%2c-463.56C436.445%2c-555.339%2c328.989%2c-645.856%2c196.2%2c-668.195C69.682%2c-689.479%2c-45.774%2c-610.287%2c-170.986%2c-582.325C-307.458%2c-551.848%2c-458.909%2c-577.403%2c-572.917%2c-496.436C-698.797%2c-407.038%2c-805.777%2c-271.791%2c-824.104%2c-118.488C-842.337%2c34.027%2c-727.838%2c163.627%2c-668.78%2c305.421C-607.284%2c453.067%2c-610.042%2c654.051%2c-470.089%2c731.473C-329.148%2c809.442%2c-160.143%2c692.644%2c0%2c675.39' fill='%23001626'%3e%3c/path%3e%3cpath d='M2000 1753.966C2149.534 1779.8890000000001 2317.511 1774.4070000000002 2440.861 1685.993 2562.9 1598.519 2588.837 1433.655 2642.518 1293.4279999999999 2692.781 1162.129 2767.536 1031.647 2744.443 892.965 2721.522 755.316 2608.6710000000003 657.2090000000001 2518.802 550.456 2427.593 442.111 2355.463 288.57500000000005 2215.811 265.015 2075.633 241.36599999999999 1965.608 380.991 1834.084 434.94000000000005 1719.786 481.823 1587.687 481.129 1493.641 561.238 1391.78 648.004 1296.926 764.335 1290.4769999999999 897.986 1284.12 1029.728 1397.12 1130.721 1460.585 1246.343 1518.747 1352.304 1559.501 1465.624 1647.526 1548.461 1748.616 1643.5929999999998 1863.226 1730.255 2000 1753.966' fill='%2300223a'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1151'%3e%3crect width='2000' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.project .card {
+    height: 100%;
+}
+
+
+.project .card-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.project .card-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
