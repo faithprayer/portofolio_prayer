@@ -95,6 +95,20 @@ body {
 
 /* End Navbar */
 
+/* start label */
+.label-project{
+    width: fit-content;
+    top:150px;
+    right:100px
+}
+
+.label-experience{
+    width: fit-content;
+    top:150px;
+    left: 50px;
+}
+/* end label */
+
 /* Icon */
 .linkedin-icon:hover {
     color: #0077b5;
@@ -231,4 +245,18 @@ body {
 /* Footer */
 footer {
     background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 576px) {
+    .label-project {
+        width: fit-content;
+        top: 110px;
+        right: 10px
+    }
+
+    .label-experience {
+        width: fit-content;
+        top: 180px;
+        left: 10px;
+    }
 }
