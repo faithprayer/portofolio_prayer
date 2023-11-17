@@ -133,6 +133,7 @@ body {
 }
 
 .home {
+    min-height: 100vh;
     padding: 60px 0px;
 }
 
@@ -247,11 +248,39 @@ footer {
     background-color: var(--primary-color);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     .label-project {
         width: fit-content;
         top: 110px;
-        right: 10px
+        right: 90px;
+    }
+
+    .label-experience {
+        width: fit-content;
+        top: 180px;
+        left: 10px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 999px) {
+    .label-project {
+        width: fit-content;
+        top: 110px;
+        right: 0px;
+    }
+
+    .label-experience {
+        width: fit-content;
+        top: 180px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .label-project {
+        width: fit-content;
+        top: 100px;
+        right: 20px;
     }
 
     .label-experience {
