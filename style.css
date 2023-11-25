@@ -39,10 +39,12 @@ body {
     background-color: var(--tertiary-color) !important;
     text-decoration: none;
 }
-.btn-more{
+
+.btn-more {
     color: var(--tertiary-color);
 }
-.btn-more:hover{
+
+.btn-more:hover {
     color: var(--bg-color);
 }
 
@@ -96,32 +98,35 @@ body {
 /* End Navbar */
 
 /* start label */
-.label-project{
+.label-project {
     width: fit-content;
-    top:150px;
-    right:100px
+    top: 150px;
+    right: 100px
 }
 
-.label-experience{
+.label-experience {
     width: fit-content;
-    top:150px;
+    top: 150px;
     left: 50px;
 }
+
 /* end label */
 
 /* Icon */
-.linkedin-icon:hover {
-    color: #0077b5;
+.linkedin-icon {
+    transition: 0.5s ease;
+    z-index: 2;
 }
 
-.github-icon:hover {
-    color: #DAFFFB;
+.github-icon {
+    transition: 0.5s ease;
+    z-index: 2;
 }
 
-.instagram-icon:hover {
-    color: #c13584;
+.instagram-icon {
+    transition: 0.5s ease;
+    z-index: 2;
 }
-
 /* End Icon */
 
 /* Home */
@@ -156,9 +161,48 @@ body {
     font-weight: 500;
 }
 
-.intro-contact i {
-    font-size: 50px;
-    color: var(--secondary-color);
+.intro-contact a {
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    background-color: hsl(203, 92%, 97%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid hsl(203, 92%, 97%);
+    overflow: hidden;
+}
+
+.intro-contact a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+}
+
+.intro-contact:hover a::before {
+    scale: 1 1;
+}
+
+.intro-contact a:hover .linkedin-icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+.intro-contact a:hover .github-icon {
+    color: #DAFFFB;
+    transform: rotateY(360deg);
+}
+.intro-contact a:hover .instagram-icon {
+    color: #c13584;
+    transform: rotateY(360deg);
 }
 
 
@@ -182,7 +226,8 @@ body {
     color: var(--tertiary-color);
     transition: all .2s ease-in-out;
 }
-.btn-project:hover{
+
+.btn-project:hover {
     transform: scale(1.2);
 }
 
